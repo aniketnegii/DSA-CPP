@@ -15,7 +15,7 @@ Want to contribute, that's great follow the steps below:-
 
 - Enter the folder you want to add a file or edit a file,
 
-`$ cd folder_name`
+`$ cd folder_name` </br>
 Make changes,
 
 - Push the code to your branch
