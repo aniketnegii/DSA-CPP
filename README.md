@@ -2,7 +2,9 @@
 This repo contains all the DSA topics from beginner to advance.
 This is still in the development stage and you may find some folders empty, but we are constantly updating the repo.
 
-## Contributing
+<br/>
+
+## CONTRIBUTING
 Want to contribute, that's great follow the steps below:-
 <!-- ![happy-birthday-thumbs-up](https://user-images.githubusercontent.com/60145485/135708685-73914e01-b97e-4818-91eb-a09ee2147827.gif) -->
 <img align="right" src="https://user-images.githubusercontent.com/60145485/135708685-73914e01-b97e-4818-91eb-a09ee2147827.gif">
@@ -29,4 +31,16 @@ Make changes,
 
 ### Note
 > "Kindly push the code file only, i.e, the (.cpp) file don't push the .obj or .exe file."
+
+<br/>
+
+## CONTRIBUTORS
+
+<strong> Feel free to contribute. </strong>
+<br/><br/>
+<a href="https://github.com/aniketnegii/DSA-CPP/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aniketnegii/DSA-CPP" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
 
