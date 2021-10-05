@@ -9,12 +9,12 @@ The head pointer given may be null meaning that the initial list is empty.
 ```
 ### Example
 ```
-head refers to the first node in the list 1->2->3
+head refers to the first node in the list 1->2->3->NULL
 data=4
 position=2
 
 Insert a node at 2nd position with data 4. 
-List become:  1->2->4->3
+List become:  1->2->4->3->NULL
 
 ```
 ### Constraints
