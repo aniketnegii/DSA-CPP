@@ -30,7 +30,8 @@ Make changes,
 - Create a pull request.
 
 ### Note
-> "Kindly push the code file only, i.e, the (.cpp) file don't push the .obj or .exe file."
+> "Kindly push the code file only, i.e, the (.cpp) file don't push the .obj or .exe file." <br/>
+> Use camel case notation to name the files.
 
 <br/>
 
