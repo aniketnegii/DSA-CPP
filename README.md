@@ -1,4 +1,4 @@
-## Data structures and algorithms in C++ =>
+## Data structures and algorithms in C++
 This repo contains all the DSA topics from beginner to advance.
 This is still in the development stage and you may find some folders empty, but we are constantly updating the repo.
 
@@ -39,9 +39,5 @@ Make changes,
 
 <strong> Feel free to contribute. </strong>
 <br/><br/>
-<a href="https://github.com/aniketnegii/DSA-CPP/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=aniketnegii/DSA-CPP" />
-</a>
 
-Made with [contributors-img](https://contrib.rocks).
 
