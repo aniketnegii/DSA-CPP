@@ -2,7 +2,7 @@
 This repo contains all the DSA topics from beginner to advance.
 This is still in the development stage and you may find some folders empty, but we are constantly updating the repo.
 <br/>
-<strong>Please star the repo if you like it. </strog>
+<strong>Please star the repo if you like it. </strong>
 <br/>
 
 ## CONTRIBUTING
@@ -40,7 +40,6 @@ Make changes,
 
 <strong> Feel free to contribute. </strong>
 <br/><br/>
-
 <a href="https://github.com/aniketnegii/DSA-CPP/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=aniketnegii/DSA-CPP" />
 </a>
