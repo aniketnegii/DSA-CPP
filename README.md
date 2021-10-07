@@ -1,7 +1,8 @@
 ## Data structures and algorithms in C++
 This repo contains all the DSA topics from beginner to advance.
 This is still in the development stage and you may find some folders empty, but we are constantly updating the repo.
-
+<br/>
+<strong>Please star the repo if you like it. </strog>
 <br/>
 
 ## CONTRIBUTING
