@@ -26,7 +26,7 @@ struct node* newNode(int data)
 	return(node);
 }
 
-insert(int key, struct node **leaf)
+void insert(int key, struct node **leaf)
 {
 	if (*leaf == 0)
 	{
