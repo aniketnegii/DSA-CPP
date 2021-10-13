@@ -15,6 +15,10 @@ The numbers shown are the node numbers, not their data values. There is no cycle
 head refers to the list of nodes 1->2->3->1->NULL
 
 There is a cycle where node 3 points back to node 1, so return 1.
+
+##EXPLANATION
+
+We are declaring two node type pointer . One pointer will  traverse nodes one by one whereas the other pointer will traverse two nodes at a time . So at sometime if the two pointers are at same node , it means there's a cycle in the linked list . 
 ```
 ## Constraints
 
