@@ -52,7 +52,6 @@ int main()
                 mult[i][j] += a[i][k] * b[k][j];
             }
 
-   
     cout << endl << "Output Matrix: " << endl;
     for(i = 0; i < r1; ++i)
     for(j = 0; j < c2; ++j)
