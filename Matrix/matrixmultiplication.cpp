@@ -1,65 +1,59 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int a[10][10], b[10][10], mult[10][10], r1, c1, r2, c2, i, j, k;
+void mulMat(int mat1[][C1], int mat2[][C2]) {
+	int rslt[R1][C2];
 
-    cout << "Enter rows and columns for first matrix: ";
-    cin >> r1 >> c1;
-    cout << "Enter rows and columns for second matrix: ";
-    cin >> r2 >> c2;
+	cout << "Multiplication of given two matrices is:\n" << endl;
 
-    while (c1!=r2)
+	for (int i = 0; i < R1; i++) {
+		for (int j = 0; j < C2; j++) {
+			rslt[i][j] = 0;
+
+			for (int k = 0; k < R2; k++) {
+				rslt[i][j] += mat1[i][k] * mat2[k][j];
+			}
+
+			cout << rslt[i][j] << "\t";
+		}
+
+		cout << endl;
+	}
+}
+
+int main(void) {
+    int R1;
+    int R2;
+    int C1;
+    int C2;
+    cout<<"Enter the size of first matrix RxC"<<endl;
+    cin>>R1>>C1;
+    int mat1[R1][C1];
+	for(int i=0;i<R1;i++)
     {
-        cout << "Error! column of first matrix not equal to row of second.";
-
-        cout << "Enter rows and columns for first matrix: ";
-        cin >> r1 >> c1;
-
-        cout << "Enter rows and columns for second matrix: ";
-        cin >> r2 >> c2;
+        for(int j=0;j<C1;;j++)
+            cin>>mat1[i][j]
     }
 
-    cout << endl << "Enter elements of matrix 1:" << endl;
-    for(i = 0; i < r1; ++i)
-        for(j = 0; j < c1; ++j)
-        {
-            cout << "Enter element a" << i + 1 << j + 1 << " : ";
-            cin >> a[i][j];
-        }
-
-   
-    cout << endl << "Enter elements of matrix 2:" << endl;
-    for(i = 0; i < r2; ++i)
-        for(j = 0; j < c2; ++j)
-        {
-            cout << "Enter element b" << i + 1 << j + 1 << " : ";
-            cin >> b[i][j];
-        }
-
-   
-    for(i = 0; i < r1; ++i)
-        for(j = 0; j < c2; ++j)
-        {
-            mult[i][j]=0;
-        }
-
-    for(i = 0; i < r1; ++i)
-        for(j = 0; j < c2; ++j)
-            for(k = 0; k < c1; ++k)
-            {
-                mult[i][j] += a[i][k] * b[k][j];
-            }
-
-    cout << endl << "Output Matrix: " << endl;
-    for(i = 0; i < r1; ++i)
-    for(j = 0; j < c2; ++j)
+    cout<<"Enter the size of secondd matrix RxC"<<endl;
+    cin>>R2>>C2;
+    int mat1[R2][C2];
+	for(int i=0;i<R2;i++)
     {
-        cout << " " << mult[i][j];
-        if(j == c2-1)
-            cout << endl;
+        for(int j=0;j<C2;;j++)
+            cin>>mat2[i][j]
     }
 
-    return 0;
+	if (C1 != R2) {
+		cout << "The number of columns in Matrix-1 must be equal to the number of rows in "
+				"Matrix-2" << endl;
+		cout << "Please update MACROs according to your array dimension in #define section"
+				<< endl;
+
+		exit(EXIT_FAILURE);
+	}
+
+	mulMat(mat1, mat2);
+
+	return 0;
 }
