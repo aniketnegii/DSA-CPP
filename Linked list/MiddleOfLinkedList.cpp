@@ -15,7 +15,7 @@ void printMiddle(struct node* head)
 	while (head != NULL)
 	{
 		
-		if (count & 1)
+		if (count & 1) // Use bitwise 'AND' operator to update the mid only when 'count' is odd
 			mid = mid->next;
 
 		++count;
