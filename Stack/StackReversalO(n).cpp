@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/
+
 // C++ program to implement Stack
 // using linked list so that reverse
 // can be done with O(1) extra space.

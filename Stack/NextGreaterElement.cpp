@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/next-greater-element/
+
 // Simple C++ program to print
 // next greater elements in a
 // given array

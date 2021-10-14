@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/next-greater-frequency-element/
+
 // C++ program of Next Greater Frequency Element
 #include <iostream>
 #include <stack>

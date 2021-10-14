@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/
+
 // C++ code to reverse a
 // stack using recursion
 #include<bits/stdc++.h>

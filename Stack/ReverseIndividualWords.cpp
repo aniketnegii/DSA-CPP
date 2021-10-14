@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/reverse-individual-words/
+
 // C++ program to reverse individual words in a given
 // string using STL list
 #include <bits/stdc++.h>
