@@ -1,3 +1,11 @@
+// Problem Statement: 
+// Given a set of n non-negative integers, and a value m, 
+// determine if there is a subset of the given set with sum divisible by m.
+
+// Leetcode link for problem statement:
+// https://leetcode.com/problems/subarray-sums-divisible-by-k/
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
