@@ -1,6 +1,6 @@
 ## Data structures and algorithms in C++
 
-This repo contains all the DSA topics from beginner to advance.
+This repo contains all the DSA topics from beginner to advanced.
 This is still in the development stage and you may find some folders empty, but we are constantly updating the repo.
 
 <br/>
@@ -36,7 +36,7 @@ Make changes,
 
 ### Note
 
-> "Kindly push the code file only, i.e, the (.cpp) file don't push the .obj or .exe file." <br/>
+> "Kindly push the code file only, i.e., the (.cpp) file, don't push the .obj or .exe file." <br/>
 > Use camelCase notation to name the files.
 
 <br/>
