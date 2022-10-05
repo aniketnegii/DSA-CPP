@@ -17,7 +17,7 @@ Want to contribute, that's great follow the steps below:-
 - Fork the repo
 - Clone the repo to local,
 
-`$ git clone https://github.com/aniketnegii/DSA-CPP.git`
+`$ git clone https://github.com/<user_name>/DSA-CPP.git`
 
 - Create a new branch,
 
