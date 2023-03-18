@@ -1,95 +1,108 @@
 /* C++ program to solve Rat in
 a Maze problem using backtracking */
-#include <stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
-#define N 4
+bool solveMazeUtil(int **maze, int n, int m, int x, int y, int **sol);
 
-bool solveMazeUtil(
-	int maze[N][N], int x,
-	int y, int sol[N][N]);
-
-void printSolution(int sol[N][N])
+// funtionn to print the solution of the maze
+void printSolution(int **sol, int n, int m)
 {
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++)
-			printf(" %d ", sol[i][j]);
-		printf("\n");
-	}
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+            cout << " " << sol[i][j] << " ";
+        cout << endl;
+    }
 }
 
-bool isSafe(int maze[N][N], int x, int y)
+//To check if it is safe to move to the location
+bool isSafe(int **maze, int x, int y, int n, int m)
 {
-	
-	if (
-		x >= 0 && x < N && y >= 0
-		&& y < N && maze[x][y] == 1)
-		return true;
 
-	return false;
+    if (x >= 0 && x < n && y >= 0 && y < m && maze[x][y] == 1)
+        return true;
+
+    return false;
 }
 
-bool solveMaze(int maze[N][N])
+// solve maze function
+bool solveMaze(int **maze, int n, int m, int x, int y)
 {
-	int sol[N][N] = { { 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 },
-					{ 0, 0, 0, 0 } };
+    int **sol;
 
-	if (solveMazeUtil(
-			maze, 0, 0, sol)
-		== false) {
-		printf("Solution doesn't exist");
-		return false;
-	}
+    for (int i = 0; i < n; i++)
+    {
+        sol[i] = new int[m];
+    }
 
-	printSolution(sol);
-	return true;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+            sol[i][j] = 0;
+    }
+
+    if (solveMazeUtil(maze, n, m, x, y, sol) == false)
+    {
+        printf("Solution doesn't exist");
+        return false;
+    }
+
+    printSolution(sol, n, m);
+    return true;
 }
 
-bool solveMazeUtil(
-	int maze[N][N], int x,
-	int y, int sol[N][N])
+bool solveMazeUtil(int **maze, int n, int m, int x, int y, int **sol)
 {
 
-	if (
-		x == N - 1 && y == N - 1
-		&& maze[x][y] == 1) {
-		sol[x][y] = 1;
-		return true;
-	}
+    if (x == m - 1 && y == n - 1 && maze[x][y] == 1)
+    {
+        sol[x][y] = 1;
+        return true;
+    }
 
-	if (isSafe(maze, x, y) == true) {
-	
-		if (sol[x][y] == 1)
-			return false;
-	
-		sol[x][y] = 1;
+    if (isSafe(maze, x, y, n, m) == true)
+    {
 
-		if (solveMazeUtil(
-				maze, x + 1, y, sol)
-			== true)
-			return true;
+        if (sol[x][y] == 1)
+            return false;
 
-		if (solveMazeUtil(
-				maze, x, y + 1, sol)
-			== true)
-			return true;
-	
-		sol[x][y] = 0;
-		return false;
-	}
+        sol[x][y] = 1;
 
-	return false;
+        if (solveMazeUtil(maze, n, m, x + 1, y, sol) == true)
+            return true;
+
+        if (solveMazeUtil(maze, n, m, x, y + 1, sol) == true)
+            return true;
+
+        sol[x][y] = 0;
+        return false;
+    }
+
+    return false;
 }
 
 // driver program to test above function
 int main()
 {
-	int maze[N][N] = { { 1, 0, 0, 0 },
-					{ 1, 1, 0, 1 },
-					{ 0, 1, 0, 0 },
-					{ 1, 1, 1, 1 } };
+    // for number of rows and columns respectively
+    int n, m;
 
-	solveMaze(maze);
-	return 0;
+    cin >> n >> m;
+
+    int **maze = new int *[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        maze[i] = new int[m];
+    }
+    // Taking the input from the user
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+            cin >> maze[i][j];
+    }
+
+    solveMaze(maze, n, m, 0, 0);
+    return 0;
 }
